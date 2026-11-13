@@ -1,0 +1,62 @@
+{
+  "id": "urakka.kingdominc.unstacker",
+  "name": "Unstacker",
+  "version": "0.1.1",
+  "author": "Urakka",
+  "description": "For Kingdom Inc game version 1.0.14. Ctrl+Shift-click a stacked building to remove one level and refund its building cost.",
+  "repository": {
+    "platform": "GitHub",
+    "owner": "urakkaamyx",
+    "name": "KingdomInc_Unstacker",
+    "url": "https://github.com/urakkaamyx/KingdomInc_Unstacker",
+    "branch": "main",
+    "visibility": "public",
+    "topics": [],
+    "latestTag": null
+  },
+  "distribution": {
+    "nexus": {
+      "game": "kingdominc",
+      "modId": 25,
+      "fileId": 8364843,
+      "url": "https://www.nexusmods.com/kingdominc/mods/25",
+      "requirements": [
+        {
+          "name": "Foundation",
+          "url": "https://www.nexusmods.com/kingdominc/mods/18",
+          "minimumVersion": "0.14.0",
+          "type": "nexus"
+        },
+        {
+          "name": "BepInEx 5",
+          "type": "offsite"
+        }
+      ],
+      "tags": [
+        "AI-Generated Content",
+        "AI Media"
+      ],
+      "tagsVerified": true,
+      "requirementsVerified": true,
+      "runtimeVersionId": "46785078755465"
+    }
+  },
+  "development": {
+    "framework": "Foundation",
+    "language": "C#",
+    "target": "netstandard2.1",
+    "dependencies": [
+      "BepInEx 5",
+      "0Harmony (bundled with BepInEx 5)",
+      "Kingdom Inc game assemblies",
+      "UnityEngine (bundled with game)",
+      "Foundation 0.14.0"
+    ],
+    "gameIntegration": "Foundation"
+  },
+  "publishing": {
+    "githubReleases": null,
+    "nexusMods": "https://www.nexusmods.com/kingdominc/mods/25",
+    "archivePreviousReleases": false
+  }
+}
