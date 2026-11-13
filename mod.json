@@ -6,9 +6,9 @@
   "description": "For Kingdom Inc game version 1.0.14. Ctrl+Shift-click a stacked building to remove one level and refund its building cost.",
   "repository": {
     "platform": "GitHub",
-    "owner": "urakkaamyx",
+    "owner": "KingdomIncModding",
     "name": "KingdomInc_Unstacker",
-    "url": "https://github.com/urakkaamyx/KingdomInc_Unstacker",
+    "url": "https://github.com/KingdomIncModding/KingdomInc_Unstacker",
     "branch": "main",
     "visibility": "public",
     "topics": [],
