@@ -19,22 +19,34 @@ namespace Unstacker
 
             // Feature policy stays in this mod: reverse one purchase, keep upgrades,
             // grant the refund and present feedback through Foundation primitives.
+            int previousStack = element.StackSize;
             var refund = access.SingleCopyCost(element, -1);
-            access.SetStackSize(element, element.StackSize - 1);
-            access.Grant(refund, countAsIncome: false);
+            if (refund == null)
+                return false;
+
+            bool granted = false;
+            try
+            {
+                access.SetStackSize(element, previousStack - 1);
+                access.Grant(refund, countAsIncome: false);
+                granted = true;
+            }
+            catch
+            {
+                if (!granted && access.IsInActiveWorkspace(element))
+                {
+                    try { access.SetStackSize(element, previousStack); }
+                    catch { }
+                }
+
+                throw;
+            }
+
             access.RefreshLabel(view);
             ui.PlaySound(GameUiSound.TurnPage);
             access.ShowIncome(view, refund);
             access.ShowMessage(view, "Unstacked (x" + element.StackSize + ")", Color.white);
             return true;
-        }
-
-        [System.Obsolete("Deprecated: last standalone implementation worked with game build 1.0.14. Stack visuals are maintained by Foundation WorkspaceAccess.SetStackSize. Scheduled for removal in the next Unstacker release.", false)]
-        private static void RefreshStackVisuals(Component view)
-        {
-            var access = FoundationApi.WorkspaceAccess;
-            var element = access.FromView(view);
-            if (element != null) access.SetStackSize(element, element.StackSize);
         }
     }
 }

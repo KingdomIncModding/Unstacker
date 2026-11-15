@@ -6,11 +6,11 @@ using KingdomFoundation.Api;
 namespace Unstacker
 {
     [BepInPlugin(PluginId, "Unstacker", PluginVersion)]
-    [BepInDependency("urakka.kingdominc.foundation", "0.14.0")]
+    [BepInDependency("urakka.kingdominc.foundation", "0.14.4")]
     public sealed class UnstackerPlugin : BaseUnityPlugin
     {
         public const string PluginId = "urakka.kingdominc.unstacker";
-        public const string PluginVersion = "0.1.1";
+        public const string PluginVersion = "0.1.2";
 
         internal static ManualLogSource Log;
         private FoundationModContext context;

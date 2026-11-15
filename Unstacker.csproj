@@ -4,7 +4,7 @@
     <LangVersion>latest</LangVersion>
     <AssemblyName>Unstacker</AssemblyName>
     <RootNamespace>Unstacker</RootNamespace>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GameRoot Condition="'$(GameRoot)' == ''">$(MSBuildThisFileDirectory)..\..\</GameRoot>
     <FoundationDll Condition="'$(FoundationDll)' == '' And Exists('$(MSBuildThisFileDirectory)..\Foundation\Release\Foundation.dll')">$(MSBuildThisFileDirectory)..\Foundation\Release\Foundation.dll</FoundationDll>

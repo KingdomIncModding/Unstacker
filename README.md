@@ -1,6 +1,6 @@
 # Unstacker
 
-**Current release: 0.1.1 — for Kingdom Inc game version 1.0.14.**
+**Current release: 0.1.2 — for Kingdom Inc game version 1.0.14.**
 
 Reduce a building's stack one level at a time with **Ctrl + Shift + left-click**.
 
@@ -16,7 +16,7 @@ Unstacking is unavailable while dragging or using the deconstruction tool. Click
 ## Requirements
 
 - Kingdom Inc with BepInEx 5 installed.
-- [Foundation](https://www.nexusmods.com/kingdominc/mods/18) version **0.14.0 or later**.
+- [Foundation](https://www.nexusmods.com/kingdominc/mods/18) version **0.14.4 or later**.
 
 ## Installation
 
