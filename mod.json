@@ -1,63 +1,65 @@
 {
-  "id": "urakka.kingdominc.unstacker",
-  "name": "Unstacker",
-  "version": "0.1.2",
-  "author": "Urakka",
-  "description": "For Kingdom Inc game version 1.0.14. Ctrl+Shift-click a stacked building to remove one level and refund its building cost.",
-  "repository": {
-    "platform": "GitHub",
-    "owner": "KingdomIncModding",
-    "name": "Unstacker",
-    "url": "https://github.com/KingdomIncModding/Unstacker",
-    "branch": "main",
-    "visibility": "public",
-    "topics": [],
-    "latestTag": "v0.1.1"
-  },
-  "distribution": {
-    "nexus": {
-      "game": "kingdominc",
-      "modId": 25,
-      "fileId": 8364843,
-      "url": "https://www.nexusmods.com/kingdominc/mods/25",
-      "requirements": [
-        {
-          "name": "Foundation",
-          "url": "https://www.nexusmods.com/kingdominc/mods/18",
-          "minimumVersion": "0.14.4",
-          "type": "nexus",
-          "fileId": 8358756
-        },
-        {
-          "name": "BepInEx 5",
-          "type": "offsite"
-        }
-      ],
-      "tags": [
-        "AI-Generated Content",
-        "AI Media"
-      ],
-      "tagsVerified": true,
-      "requirementsVerified": true,
-      "runtimeVersionId": "46785078755465"
-    }
-  },
-  "development": {
-    "framework": "Foundation",
-    "language": "C#",
-    "target": "netstandard2.1",
-    "dependencies": [
-      "BepInEx 5",
-      "0Harmony (bundled with BepInEx 5)",
-      "Kingdom Inc game assemblies",
-      "UnityEngine (bundled with game)",
-      "Foundation 0.14.4"
-    ],
-    "gameIntegration": "Foundation"
-  },
-  "publishing": {
-    "githubReleases": "https://github.com/KingdomIncModding/Unstacker/releases/tag/v0.1.1",
-    "nexusMods": "https://www.nexusmods.com/kingdominc/mods/25",
-    "archivePreviousReleases": false
-  }
+    "id":  "urakka.kingdominc.unstacker",
+    "name":  "Unstacker",
+    "version":  "0.1.2",
+    "author":  "Urakka",
+    "description":  "For Kingdom Inc game version 1.0.14. Ctrl+Shift-click a stacked building to remove one level and refund its building cost.",
+    "repository":  {
+                       "platform":  "GitHub",
+                       "owner":  "KingdomIncModding",
+                       "name":  "Unstacker",
+                       "url":  "https://github.com/KingdomIncModding/Unstacker",
+                       "branch":  "main",
+                       "visibility":  "public",
+                       "topics":  [
+
+                                  ],
+                       "latestTag":  "v0.1.2"
+                   },
+    "distribution":  {
+                         "nexus":  {
+                                       "game":  "kingdominc",
+                                       "modId":  25,
+                                       "fileId":  8364843,
+                                       "url":  "https://www.nexusmods.com/kingdominc/mods/25",
+                                       "requirements":  [
+                                                            {
+                                                                "name":  "Foundation",
+                                                                "url":  "https://www.nexusmods.com/kingdominc/mods/18",
+                                                                "minimumVersion":  "0.14.4",
+                                                                "type":  "nexus",
+                                                                "fileId":  8358756
+                                                            },
+                                                            {
+                                                                "name":  "BepInEx 5",
+                                                                "type":  "offsite"
+                                                            }
+                                                        ],
+                                       "tags":  [
+                                                    "AI-Generated Content",
+                                                    "AI Media"
+                                                ],
+                                       "tagsVerified":  true,
+                                       "requirementsVerified":  true,
+                                       "runtimeVersionId":  "46785078755465"
+                                   }
+                     },
+    "development":  {
+                        "framework":  "Foundation",
+                        "language":  "C#",
+                        "target":  "netstandard2.1",
+                        "dependencies":  [
+                                             "BepInEx 5",
+                                             "0Harmony (bundled with BepInEx 5)",
+                                             "Kingdom Inc game assemblies",
+                                             "UnityEngine (bundled with game)",
+                                             "Foundation 0.14.4"
+                                         ],
+                        "gameIntegration":  "Foundation"
+                    },
+    "publishing":  {
+                       "githubReleases":  "https://github.com/KingdomIncModding/Unstacker/releases/tag/v0.1.2",
+                       "nexusMods":  "https://www.nexusmods.com/kingdominc/mods/25",
+                       "archivePreviousReleases":  false
+                   }
 }
