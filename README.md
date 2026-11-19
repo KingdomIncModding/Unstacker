@@ -1,5 +1,7 @@
 # Unstacker
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6V62AX30M)
+
 **Current release: 0.1.2 — for Kingdom Inc game version 1.0.14.**
 
 Reduce a building's stack one level at a time with **Ctrl + Shift + left-click**.
@@ -32,3 +34,9 @@ Close the game before replacing or removing the `Unstacker` plugin folder. Stack
 |---|---|---|
 | WorldFlowElement.OnPointerClick | Foundation hook (prefix) | Handles Ctrl+Shift+left-click as unstacking; other clicks follow normal game behavior. May conflict with mods that replace building clicks. |
 | WorldFlowElement._canStackElement | Foundation hook (postfix) | Hides the add-stack hint and purchase cost while Ctrl+Shift is held. |
+
+## Support
+
+If you enjoy these Kingdom Inc mods and tools, consider supporting development on Ko-fi!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6V62AX30M)
